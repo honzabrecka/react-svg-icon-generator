@@ -39,11 +39,6 @@ const svgo = new SVGOptim({
     'removeDimensions',
     'addClassesToSVGElement',
     'removeStyleElement',
-    {
-      removeAttrs: {
-        attrs: 'class',
-      },
-    },
   ],
 });
 

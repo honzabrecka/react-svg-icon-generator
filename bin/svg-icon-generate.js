@@ -4,7 +4,7 @@ const configureGenerator = require('../lib/configureGenerator');
 
 const argv = require('yargs')
   .default('reactPureRender', true)
-  .default('radium', true)
+  .default('radium', false)
   .default('native', false)
   .default('keepFillColor', false)
   .default('template', path.join(__dirname, '..', 'template', 'icon.nunjucks'))

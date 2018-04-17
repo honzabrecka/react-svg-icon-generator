@@ -1,7 +1,7 @@
 function _camelCase(string) {
   return string.replace(/^.|-./g, (letter, index) =>
     index === 0 ? letter.toLowerCase() : letter.substr(1).toUpperCase()
-  );
+  ).replace('class', 'className');
 }
 
 function _basicCleanup(svg) {
