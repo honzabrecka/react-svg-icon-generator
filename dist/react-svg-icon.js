@@ -25317,10 +25317,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.cleanupSvg = cleanupSvg;
 	exports.cleanupNativeSvg = cleanupNativeSvg;
 	function _camelCase(string) {
-	  if (string === 'class') return 'className';
 	  return string.replace(/^.|-./g, function (letter, index) {
 	    return index === 0 ? letter.toLowerCase() : letter.substr(1).toUpperCase();
-	  });
+	  }).replace('class', 'className');
 	}
 
 	function _basicCleanup(svg) {

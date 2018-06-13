@@ -36,7 +36,7 @@ export default class {{componentName}} extends Component {
     ]).isRequired,
     onClick: PropTypes.func,
     preview: PropTypes.bool,
-    size: PropTypes.number,
+    size: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     style: PropTypes.oneOfType([
       PropTypes.array,
       PropTypes.object

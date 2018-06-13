@@ -46,7 +46,7 @@ export default class {{componentName}} extends Component {
       {%- endfor %}
     ]).isRequired,
     preview: PropTypes.bool,
-    size: PropTypes.number,
+    size: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     style: View.propTypes.style,
     wrapperStyle: View.propTypes.style,
   };
