@@ -55,7 +55,7 @@ export default class {{componentName}} extends Component {
     {%- if useColorProp %}
     color: '#000',
     {%- endif %}
-    size: 32
+    size: 'auto'
   }
 
   render() {

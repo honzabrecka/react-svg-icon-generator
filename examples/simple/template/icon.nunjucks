@@ -18,7 +18,7 @@ export default class Icon extends Component {
   };
 
   static defaultPropTypes = {
-    size: 32,
+    size: 'auto',
     color: '#000'
   }
 
